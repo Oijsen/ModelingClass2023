@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: StarShip PRO.ma
-//Last modified: Tue, Nov 14, 2023 08:39:09 PM
+//Last modified: Thu, Nov 16, 2023 09:52:22 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,19 +10,19 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "C0EDB421-491F-E1D4-BA6D-EF8206C133C2";
+fileInfo "UUID" "F9A3EA6E-431F-C099-C30F-7A8174BD3186";
 createNode transform -s -n "persp";
 	rename -uid "F6352069-422A-E5C6-E0B8-0E80D0909D79";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.051897320330716 14.149633704228989 -20.496113606774795 ;
-	setAttr ".r" -type "double3" -38.738352729058988 918.59999999991089 0 ;
+	setAttr ".t" -type "double3" -24.576977621962914 18.096295374430397 -7.7802243133465439 ;
+	setAttr ".r" -type "double3" -33.938352729102036 987.39999999994893 1.2722218725854067e-13 ;
 	setAttr ".rp" -type "double3" -6.106226635438361e-16 4.4408920985006262e-16 0 ;
 	setAttr ".rpt" -type "double3" 3.8378926820715556e-13 -1.5222940918674599e-13 2.7533845702660924e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2B06CD39-4DEA-3BCD-9E1E-6CB393D46CE2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 18.623095312876796;
+	setAttr ".coi" 27.942549311121446;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -20831,20 +20831,20 @@ createNode mesh -n "revolvedSurface2Shape" -p "revolvedSurface2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "555BC964-4007-2246-460B-2AAB2B376776";
+	rename -uid "68EE8B77-4EB9-969D-3C1E-EDBC605EC856";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "86991B94-4E08-CA13-7F77-87B1013ED297";
+	rename -uid "5B258BB9-4A39-8FC1-DBC4-36AC7750A643";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "AD3BBBF1-488C-86A5-B718-78A33A841938";
+	rename -uid "2EDE81C6-49A3-9A94-6EF2-499471ED7EC6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F13612CE-49E8-3B76-C1AA-219E73E804A9";
+	rename -uid "06B8FB72-48F5-EB5D-A04F-F7901D521168";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68869393-43E0-CF00-C783-D393E3D4CC08";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "766021EC-4F96-093C-6984-9CAD34CB2027";
+	rename -uid "2425357A-44A8-924B-CD32-B9B29B39A316";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5DB7F4B4-4E1F-CE9D-0E56-72ADCE6A3CD5";
 	setAttr ".g" yes;
